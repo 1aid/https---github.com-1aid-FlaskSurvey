@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>{{ instructions }}</p>
+    
+    <form action="{{ url_for('question', question_id=0) }}" method="get">
+      <input type="submit" value="Start survey">
+    </form>
+  </body>
+</html>
