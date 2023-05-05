@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-from secrets import token_hex
 import secrets
 
 app = Flask(__name__)
@@ -68,8 +67,8 @@ def question(question_id):
 @app.route('/thankyou')
 def thankyou():
     return render_template('thankyou.html')
+    print(session) # Print session variable to console
+
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
